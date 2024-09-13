@@ -1,0 +1,15 @@
+
+
+#box-container{
+    background-color: beige;
+    width: 300px;
+    border: 40px solid rgb(126, 69, 23);
+    border-radius: 5%;
+    padding: 50px;
+    margin: 20px; 
+}
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: #783011;
+}
