@@ -37,7 +37,7 @@ input, label{
 .slider{
     display: flex;
     justify-content: space-between;
-    width: 160PX;
+    width: 180px;
 }
 #tip-slider{
     padding: 0;
