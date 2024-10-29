@@ -5,8 +5,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tip Calculator App</title>
         <link rel="stylesheet" href="css/styles.css"/>
+        <link rel="script" href="js/scripts.js"/>
     </head>
     <body>
-        
+        <div id="container">
+            <h1>Tip Calculator</h1>
+            <div class="conversion">
+                <p>Currency Conversion</p>
+                <p>$1 USD = 149.34 JPY for Yen</p>
+                <p>$1 USD = 84.07 INR for Rupee</p>
+            </div>
+            <form action="#" method="POST">
+                <label for="bill">Bill Total:</label>
+                <input type="number" id="bill" name="bill" required>
+                <label for="currency">Select Currency</label>
+                <select name="currency" id="currency">
+                    <option value="dollar">US Dollars</option>
+                    <option value="yen">Japanese Yen</option>
+                    <option value="rupee">Indian Rupee</option>
+                </select>
+                <label for="tip-slider">Tip:</label>
+                <input id="tip-slider" type="range" min="0" max="100">
+                <label for="convert-tip">Converted Tip Amount:</label>
+                <input type="text" id="converted-tip" disabled>
+                <label for="total">Converted Total Bill With Tip:</label>
+                <input type="text" id="total" disabled>
+            </form>
+        </div>
     </body>
 </html>
