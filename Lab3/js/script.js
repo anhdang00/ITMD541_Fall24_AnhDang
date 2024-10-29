@@ -1,2 +1,3 @@
-var title = document.getElementById('title');
-title.innerHTML = "title";
+
+//get input from slider
+var slider = document.getElementById("tip-slider");
