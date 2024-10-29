@@ -8,7 +8,7 @@
         <script src="js/script.js"></script>
     </head>
     <body>
-        <div id="container">
+        <div class="container">
             <p id="title">ITMD 541 - Lab 3 - Anh Dang</p>
             <h1>Tip Calculator</h1>
             <div class="content">
@@ -26,10 +26,10 @@
                         <option value="yen">Japanese Yen</option>
                         <option value="rupee">Indian Rupee</option>
                     </select>
-                    <label for="tip-slider">Tip:</label>
+                    <label for="tipSlider">Tip:</label>
                     <div class="slider">
-                        <input id="tip-slider" type="range" min="0" max="100">
-                        <p><span id="tip-percent"></span>%</p>
+                        <input id="tipSlider" type="range" min="0" max="100" value="10">
+                        <p><span id="tipPercent"></span> %</p>
                     </div>
                     <label for="convert-tip">Converted Tip Amount:</label>
                     <input type="text" id="converted-tip" disabled>
