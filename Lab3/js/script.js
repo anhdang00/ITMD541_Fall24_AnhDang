@@ -33,6 +33,13 @@ var tipAmount = document.getElementById("converted-tip");
 
 function calculateTip(){
     var bill = parseFloat(billInput.value);
+    var warning = document.getElementById("warning");
+    if(bill < 0){
+        warning.innerHTML="Amount cannot be negative.";
+        return;
+    }else{
+        warning.innerHTML="";
+    }
     //currency conversion
     if (currency == "yen"){
         bill = bill*149.34;
