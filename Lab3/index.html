@@ -18,7 +18,7 @@
                 </div>
                 <form action="#" method="POST">
                     <label for="bill">Bill Total:</label>
-                    <input type="number" id="bill" name="bill" required>
+                    <input type="text" id="bill" name="bill" value="0" required>
                     <label for="currency">Select Currency</label>
                     <select name="currency" id="currency">
                         <option value="dollar">US Dollars</option>
@@ -31,7 +31,7 @@
                         <p><span id="tip-percent"></span> %</p>
                     </div>
                     <label for="convert-tip">Converted Tip Amount:</label>
-                    <input type="text" id="converted-tip" disabled>
+                    <input type="text" id="converted-tip" value="" disabled>
                     <label for="total">Converted Total Bill With Tip:</label>
                     <input type="text" id="total" disabled>
                 </form>
