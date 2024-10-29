@@ -1,2 +1,2 @@
-const wrapper = document.querySelector(".container");
-//get input from slider
+var title = document.getElementById('title');
+title.innerHTML = "title";
