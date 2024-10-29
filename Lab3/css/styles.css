@@ -107,8 +107,11 @@ input, select{
         line-height: 34px;
         height: fit-content;
     }
-    p{
+    h3{
         font-size: 18px;
+    }
+    p{
+        font-size: 16px;
     }
     .content{
         display: flex;
@@ -121,5 +124,19 @@ input, select{
     }
     .conversion{
         order: 1;
+    }
+    .slider{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 450px;
+    }
+    #tip-slider{
+        -webkit-appearance: none;  /* Override default CSS styles */
+        appearance: none;
+        width: 80%; /* Full-width */
+        height: 10px; /* Specified height */
+        outline: none; 
+        cursor: pointer;
     }
 }
