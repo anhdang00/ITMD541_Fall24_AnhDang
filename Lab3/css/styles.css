@@ -2,7 +2,7 @@ h1,h3{
     text-align: center;
 }
 h1{
-    margin: 25px auto;
+    margin: 25px auto 15px auto;
     text-align: center;
     color:#2c406b;
     font-family: 'Jaldi';
@@ -99,18 +99,27 @@ input, select{
     }
     h1{
         margin: 55px auto 25px auto;
-        text-align: center;
-        color:#2c406b;
-        font-family: 'Jaldi';
-        font-weight: 700;
-        font-size: 48px;
+        font-size: 52px;
     }
     .conversion{
         width: fit-content;
-        margin: 0 auto 50px auto;
+        margin: 0;
         line-height: 34px;
+        height: fit-content;
     }
     p{
         font-size: 18px;
+    }
+    .content{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+    form{
+        order: 0;
+        width: 500px;
+    }
+    .conversion{
+        order: 1;
     }
 }
