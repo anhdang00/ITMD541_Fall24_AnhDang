@@ -6,8 +6,15 @@ billInput.addEventListener("change", calculateTip);
 //get selected currency
 var dropdown = document.getElementById("currency");
 var currency = "dollar";
+var symbol = document.getElementsByClassName("currency-symbol");
+symbol[0].innerHTML = "&#36"; symbol[1].innerHTML = "&#36";
 dropdown.addEventListener("change", ()=>{
     currency = dropdown.options[dropdown.selectedIndex].value;
+    if (currency == "yen"){
+        symbol[0].innerHTML = "&#165"; symbol[1].innerHTML = "&#165";
+    } else if(currency == "rupee"){
+        symbol[0].innerHTML = "&#8377"; symbol[1].innerHTML = "&#8377";
+    }
     calculateTip();
 });
 
