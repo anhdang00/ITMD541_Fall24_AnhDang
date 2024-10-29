@@ -14,6 +14,7 @@ input, label{
 h1{
     margin: 50px auto;
     text-align: center;
+    color:#2c406b;
 }
 .content{
     width: fit-content;
@@ -25,7 +26,7 @@ label, input, select{
 }
 
 body{
-    background-color: aliceblue;
+    background-color: #C9D0DE;
 }
 .content{
     background-color: lightblue;
