@@ -1,18 +1,5 @@
-input, label{
-    display: block;
-}
-
-.slider{
-
-    display: flex;
-    justify-content: space-between;
-    width: 160PX;
-    margin: 0;
-    padding: 0;
-    background-color: grey;
-}
 h1{
-    margin: 50px auto;
+    margin: 25px auto;
     text-align: center;
     color:#2c406b;
 }
@@ -21,20 +8,38 @@ h1{
     margin: auto;
     padding:10px
 }
-label, input, select{
-    margin-bottom: 10px;
-}
-
 body{
     background-color: #C9D0DE;
 }
 .content{
     background-color: rgba(255,255,255,0);
 }
+
+/*form styling*/
 form{
-    background-color: #6c7c9e;
+    background-color: #98a4bc;
+    border-radius: 25px;
+    padding: 10px;
 }
 .conversion{
     background-color: rgba(255,255,255,0.4);
+    padding: 10px;
+    width: fit-content;
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
+label, input, select{
+    margin-bottom: 10px;
+}
+input, label{
+    display: block;
+}
+.slider{
+    display: flex;
+    justify-content: space-between;
+    width: 160PX;
+}
+#tip-slider{
+    padding: 0;
     margin: 0;
 }
