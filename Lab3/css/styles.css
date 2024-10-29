@@ -3,9 +3,13 @@ input, label{
 }
 
 .slider{
+
     display: flex;
     justify-content: space-between;
     width: 160PX;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
 }
 h1{
     margin: 50px auto;
@@ -14,4 +18,22 @@ h1{
 .content{
     width: fit-content;
     margin: auto;
+    padding:10px
+}
+label, input, select{
+    margin-bottom: 10px;
+}
+
+body{
+    background-color: aliceblue;
+}
+.content{
+    background-color: lightblue;
+}
+form{
+    background-color: aquamarine;
+}
+.conversion{
+    background-color: lightseagreen;
+    margin: 0;
 }
