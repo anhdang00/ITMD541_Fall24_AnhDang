@@ -1,12 +1,18 @@
+h1,h3{
+    text-align: center;
+}
 h1{
-    margin: 25px auto;
+    margin: 55px auto 25px auto;
     text-align: center;
     color:#2c406b;
+}
+p, h3{
+    margin: 0;
 }
 .content{
     width: fit-content;
     margin: auto;
-    padding:10px
+    padding:10px;
 }
 body{
     background-color: #C9D0DE;
@@ -15,24 +21,37 @@ body{
     background-color: rgba(255,255,255,0);
 }
 
-/*form styling*/
-form{
-    background-color: #98a4bc;
-    border-radius: 25px;
-    padding: 10px;
-}
+/*conversion chart*/
 .conversion{
     background-color: rgba(255,255,255,0.4);
     padding: 10px;
     width: fit-content;
     margin-bottom: 50px;
     border-radius: 5px;
+    line-height: 34px;
 }
-label, input, select{
-    margin-bottom: 10px;
+
+/*form styling*/
+form{
+    background-color: #98a4bc;
+    border-radius: 15px;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+label{
+    margin: 10px 0;
 }
 input, label{
     display: block;
+}
+input, select{
+    border-radius: 5px;
+}
+#bill, select{
+    border: none;
+}
+#bill{
+    width: 95%;
 }
 .slider{
     display: flex;
@@ -40,6 +59,19 @@ input, label{
     width: 180px;
 }
 #tip-slider{
+    padding: 0;
+    margin: 0;
+}
+.display-amount{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.disabled{
+    height: fit-content;
+    width: 90%;
+}
+.currency-symbol{
     padding: 0;
     margin: 0;
 }
