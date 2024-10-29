@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tip Calculator App</title>
         <link rel="stylesheet" href="css/styles.css"/>
-        <link rel="script" href="js/scripts.js"/>
+        <script src="js/script.js"></script>
     </head>
     <body>
         <div id="container">
@@ -29,7 +29,7 @@
                     <label for="tip-slider">Tip:</label>
                     <div class="slider">
                         <input id="tip-slider" type="range" min="0" max="100">
-                        <p id="tip-percent">0</p>
+                        <p><span id="tip-percent"></span>%</p>
                     </div>
                     <label for="convert-tip">Converted Tip Amount:</label>
                     <input type="text" id="converted-tip" disabled>
