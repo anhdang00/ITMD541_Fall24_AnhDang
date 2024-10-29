@@ -1,4 +1,16 @@
 
+//take bill input
+var billInput = document.getElementById("bill");
+billInput.addEventListener("change", calculateTip);
+
+//get selected currency
+var dropdown = document.getElementById("currency");
+var currency = "dollar";
+dropdown.addEventListener("change", ()=>{
+    currency = dropdown.options[dropdown.selectedIndex].value;
+    calculateTip();
+});
+
 //get input from slider
 var slider = document.getElementById("tip-slider");
 var tipPercent = document.getElementById("tip-percent");
@@ -8,18 +20,23 @@ slider.oninput = function(){
     calculateTip();
 }
 
-//take bill input
-var billInput = document.getElementById("bill");
-
 //calculate and display tip and total
 var total = document.getElementById("total");
 var tipAmount = document.getElementById("converted-tip");
 
 function calculateTip(){
     var bill = parseInt(billInput.value);
+    //currency conversion
+    if (currency == "yen"){
+        bill = bill*149.34;
+    } else if(currency == "rupee"){
+        bill = bill*84.07;
+    }
+
     var tip = bill * (parseInt(slider.value)/100);
     var totalAmount = bill + tip;
 
     tipAmount.value = tip;
     total.value = totalAmount;
 }
+
