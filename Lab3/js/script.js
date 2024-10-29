@@ -50,7 +50,7 @@ function calculateTip(){
     var tip = bill * (parseFloat(slider.value)/100);
     var totalAmount = bill + tip;
 
-    tipAmount.value = tip;
-    total.value = totalAmount;
+    tipAmount.value = tip.toFixed(2);
+    total.value = totalAmount.toFixed(2);
 }
 
