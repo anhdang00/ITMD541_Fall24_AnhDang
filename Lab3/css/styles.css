@@ -5,13 +5,13 @@ input, label{
 .slider{
     display: flex;
     justify-content: space-between;
-    width: 70vw;
+    width: 160PX;
 }
 h1{
     margin: 50px auto;
     text-align: center;
 }
-form{
+.content{
     width: fit-content;
     margin: auto;
 }
