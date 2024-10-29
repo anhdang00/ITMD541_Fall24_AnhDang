@@ -32,7 +32,7 @@ var total = document.getElementById("total");
 var tipAmount = document.getElementById("converted-tip");
 
 function calculateTip(){
-    var bill = parseInt(billInput.value);
+    var bill = parseFloat(billInput.value);
     //currency conversion
     if (currency == "yen"){
         bill = bill*149.34;
@@ -40,7 +40,7 @@ function calculateTip(){
         bill = bill*84.07;
     }
 
-    var tip = bill * (parseInt(slider.value)/100);
+    var tip = bill * (parseFloat(slider.value)/100);
     var totalAmount = bill + tip;
 
     tipAmount.value = tip;
