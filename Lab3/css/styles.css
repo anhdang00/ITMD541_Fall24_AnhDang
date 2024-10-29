@@ -29,12 +29,12 @@ body{
     background-color: #C9D0DE;
 }
 .content{
-    background-color: lightblue;
+    background-color: rgba(255,255,255,0);
 }
 form{
-    background-color: aquamarine;
+    background-color: #6c7c9e;
 }
 .conversion{
-    background-color: lightseagreen;
+    background-color: rgba(255,255,255,0.4);
     margin: 0;
 }
