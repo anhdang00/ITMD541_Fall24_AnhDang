@@ -20,7 +20,7 @@ p, h3{
 }
 body{
     background-color: #C9D0DE;
-    color:#161616e6;
+    color:#161616c2;
 }
 .content{
     background-color: rgba(255,255,255,0);
@@ -96,6 +96,7 @@ input, select{
 @media screen and (min-width: 768px) {
     #title{
         text-align: center;
+        margin-top: 15px;
     }
     h1{
         margin: 55px auto 25px auto;
@@ -115,21 +116,26 @@ input, select{
     }
     .content{
         display: flex;
-        width: 100%;
-        justify-content: space-around;
+        width: fit-content;
+        margin: auto;
+        padding: 0;
     }
     form{
         order: 0;
         width: 500px;
+        padding: 20px 40px;
+        border-radius: 15px;
+        background-color: #abb8d1;
     }
     .conversion{
         order: 1;
+        margin-left: 25px;
     }
     .slider{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 450px;
+        width: 400px;
     }
     #tip-slider{
         -webkit-appearance: none;  /* Override default CSS styles */
@@ -138,5 +144,21 @@ input, select{
         height: 10px; /* Specified height */
         outline: none; 
         cursor: pointer;
+    }
+    .form-item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+    }
+    input,select{
+        height: fit-content;
+        color: #131212e0;
+    }
+    #bill, select{
+        width: 300px;
+    }
+    .disabled{
+        color: #131212e0;
     }
 }
