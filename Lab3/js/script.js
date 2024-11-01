@@ -32,15 +32,21 @@ var total = document.getElementById("total");
 var tipAmount = document.getElementById("converted-tip");
 
 function calculateTip(){
-    var bill = parseFloat(billInput.value);
+    var bill = billInput.value;
     var warning = document.getElementById("warning");
-    if(bill < 0){
+    
+    if (isNaN(bill) || !(isFinite(bill))){
+        warning.innerHTML="Please enter a valid amount.";
+        return;
+    }
+    if(parseFloat(bill) < 0){
         warning.innerHTML="Amount cannot be negative.";
         return;
     }else{
         warning.innerHTML="";
     }
     //currency conversion
+    bill = parseFloat(bill);
     if (currency == "yen"){
         bill = bill*149.34;
     } else if(currency == "rupee"){
