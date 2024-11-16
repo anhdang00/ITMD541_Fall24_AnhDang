@@ -56,3 +56,21 @@
     const imgList = document.querySelectorAll('img.w-full.h-auto');
     imgList[3].setAttribute('src','https://picsum.photos/id/453/400/300');
 })();
+
+//graduate requirements
+(function(){
+    const forms = document.getElementsByTagName('form');
+    forms[0].removeAttribute('action');
+
+    function submitForm(event){
+        event.preventDefault();
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        if (name ==="" || email === ""){
+            alert("Please provide a name and an email.");
+        }else{
+            alert("Thank you, " + name + "! We will be in touch with you shortly at " + email +".");
+        }
+    }
+    forms[0].addEventListener('submit', submitForm);
+})();
