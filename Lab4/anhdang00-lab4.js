@@ -17,7 +17,7 @@
 })();
 // 5. Remove the get started Call-to-action (CTA) from the hero.
 (function(){
-
+    document.querySelector('.relative.bg-blue-600.text-white.px-6.py-2.rounded').remove();
 })();
 //6. In the services section change the icons color to a light blue (#6495ed).
 (function(){
