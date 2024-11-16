@@ -13,7 +13,7 @@
 })();
 //4. Change the background color of the nav bar to the same color that is used in the footer.
 (function(){
-
+    document.querySelector('.bg-blue-600.text-white.p-4').style.backgroundColor = "rgba(31, 41, 55,1)";
 })();
 // 5. Remove the get started Call-to-action (CTA) from the hero.
 (function(){
