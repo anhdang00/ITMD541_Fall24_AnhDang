@@ -40,7 +40,15 @@
 
 //8. In the “Specialized Marketing Solutions” section make a change to the layout of the tiles
 (function(){
-    
+    const style = document.createElement('style');
+    style.innerHTML = `
+        @media (min-width: 1024px){
+            [data-section="product_cards"]{
+                display:flex;
+            }
+        }
+    `;
+    document.head.appendChild(style);
 })();
 
 //9. In the same section change the Musicians image
