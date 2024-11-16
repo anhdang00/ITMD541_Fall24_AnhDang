@@ -21,7 +21,11 @@
 })();
 //6. In the services section change the icons color to a light blue (#6495ed).
 (function(){
-
+    const icons = document.querySelectorAll('.material-symbols-outlined.text-6xl');
+    icons.forEach( icon =>{
+        console.log(icon);
+        icon.style.color = "#6495ed";
+    })
 })();
 //7. Change the digital marketing icon to use ‘Ads Click’ instead of the current icon.
 (function(){
