@@ -29,7 +29,8 @@
 })();
 //7. Change the digital marketing icon to use ‘Ads Click’ instead of the current icon.
 (function(){
-
+    document.querySelector('.material-symbols-outlined.text-6xl').innerHTML='ads_click';
+    console.log(document.querySelector('.material-symbols-outlined.text-6xl'));
 })();
 //8. In the “Specialized Marketing Solutions” section make a change to the layout of the tiles
 (function(){
